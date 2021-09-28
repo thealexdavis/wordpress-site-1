@@ -1,0 +1,259 @@
+@import "variables";
+
+body#optima .entry-content-page{
+	.gform_confirmation_wrapper {
+		background-color: #e5ecec;
+		border: 1px solid #bfcfd0;
+	}
+	.gform_confirmation_message{
+		font-family: 'Poppins', sans-serif;
+		font-weight: 300;
+		font-size: 1.22em;
+		padding: 25px;
+	}
+	form:not(.newsletter){
+		input, button, textarea, select{
+			-webkit-appearance: none;
+		}
+	  	.ginput_container_checkbox{
+		  border: 1px solid $bordercolor;
+		  border-radius: 5px;
+		  font-size: 14px;
+		  padding: 10px 22px;
+		  ul {
+			font-weight: 400;
+		  }
+		}
+		input[type="checkbox"] {
+		  -webkit-appearance: checkbox;
+		}
+		.ginput_container_date{
+			.screen-reader-text{
+				display: none !important;
+			}
+		}
+		max-width: 750px;
+		width: 100%;
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+			li{
+				margin-bottom: 0.5em;
+			}
+		}
+		.gfield_label{
+			display: none !important;
+		}
+		.hidden_sub_label{
+			display: none !important;
+		}
+		.name_first{
+			width: 100%;
+			display: inline-block;
+			margin-bottom: 0.5em;
+		}
+		.name_last{
+			width: 100%;
+			display: inline-block;
+		}
+		input[type="text"],input[type="email"]{
+			border: 1px solid $bordercolor;
+			color: black;
+			font-size: 18px;
+			box-sizing: border-box;
+			height: 50px;
+			padding: 0 22px;
+			border-radius: 5px;
+			width: 100%;
+			@include transition(all, 0.15s, linear);
+			&::placeholder {
+			  color: #000;
+			  font-family: 'Poppins', sans-serif;
+			}
+			&:hover, &:focus{
+				outline: 0;
+				border-color: $orange;
+			}
+		}
+		textarea{
+			border: 1px solid $bordercolor;
+			color: black;
+			font-size: 18px;
+			box-sizing: border-box;
+			font-family: 'Poppins', sans-serif;
+			height: 140px;
+			resize: none;
+			padding: 10px 22px;
+			border-radius: 5px;
+			width: 100%;
+			@include transition(all, 0.15s, linear);
+			&::placeholder {
+			  color: #000;
+			  font-family: 'Poppins', sans-serif;
+			}
+			&:hover, &:focus{
+				outline: 0;
+				border-color: $orange;
+			}
+		}
+		.ginput_container_select, .selectfilter{
+			position: relative;
+			&:after{
+				font-family: "Font Awesome 5 Pro";
+				font-size: 12px;
+				margin-right: 5px;
+				color: black;
+				font-weight: 900;
+				content: "\f078";
+				position: absolute;
+				right: 10px;
+				top: 20px;
+				@include transition(padding-left, 0.15s, linear);
+			}
+		}
+		select{
+			border: 1px solid $bordercolor;
+			color: black;
+			font-size: 18px;
+			box-sizing: border-box;
+			height: 50px;
+			padding: 0 22px;
+			border-radius: 5px;
+			width: 100%;
+			-webkit-appearance: none;
+			&:hover, &:focus{
+				outline: 0;
+				border-color: $orange;
+			}
+		  .request_appt_multi select.gfield_select {
+			height: auto;
+			overflow-y: hidden;
+		  }
+		}
+		input[type="submit"]{
+			background-color: $orange;
+			color: white;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 500;
+			border-radius: 5px;
+			font-size: 18px;
+			padding: 12.5px 22px;
+			outline: 0;
+			border: 0;
+			cursor: pointer;
+			@include transition(all, 0.15s, linear);
+			&:hover, &:focus{
+				outline: 0;
+				border: 0;
+				background-color: $orangehover;
+			}
+		}
+		@media only screen and (min-width: 960px) {
+			.name_first, .name_last{
+				width: calc(47.5% - 3px);
+				margin-bottom: 0 !important;
+			}
+			.name_first{
+				margin-right: 5%;
+			}
+		}
+		&#careers_filter{
+			margin-bottom: 2.5em;
+			max-width: 100%;
+			.filter{
+				margin-bottom: 10px;
+				select{
+					width: 100%;
+				}
+			}
+			.selectfilter{
+				&:after{
+					top: 42px;
+				}
+			}
+			@media only screen and (min-width: 768px) {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				max-width: 750px;
+				.filter{
+					width: 49%;
+					&:first-child{
+						margin-right: 2%;
+					}
+				}
+			}
+		}
+	}
+	form.newsletter{
+		input, button, textarea, select{
+			-webkit-appearance: none;
+		}
+		ul{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+		input[type="text"],input[type="email"]{
+			border: 0px;
+			background-color: white;
+			color: black;
+			font-size: 18px;
+			box-sizing: border-box;
+			padding: 13.5px 22px;
+			border-radius: 5px;
+			border: 1px solid white;
+			@include transition(all, 0.15s, linear);
+			&::placeholder {
+			  color: #000;
+			  font-family: 'Poppins', sans-serif;
+			}
+			&:hover, &:focus{
+				outline: 0;
+				border-color: $orange;
+			}
+		}
+		input[type="submit"]{
+			background-color: $orange;
+			color: white;
+			font-family: 'Poppins', sans-serif;
+			font-weight: 500;
+			border-radius: 5px;
+			font-size: 18px;
+			padding: 12.5px 22px;
+			outline: 0;
+			border: 0;
+			cursor: pointer;
+			@include transition(all, 0.15s, linear);
+			&:hover, &:focus{
+				outline: 0;
+				border: 0;
+				background-color: $orangehover;
+			}
+		}
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		@media only screen and (min-width: 960px) {
+			flex-direction: row;
+			.gform_body{
+				width: calc(100% - 145px);
+				margin-bottom: 0;
+				input{
+					width: 100% !important;
+				}
+			}
+			.gform_footer{
+				width: 120px;
+				margin-left: 20px;
+				input[type="submit"]{
+					margin-left: 0 !important;
+				}
+			}
+		}
+		label.gfield_label{
+			display: none;
+		}
+	}
+}

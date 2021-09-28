@@ -1,0 +1,470 @@
+@import "variables";
+
+body#optima .entry-content-page{
+	&.location{
+		#top_hero{
+			height: 150px;
+			margin-bottom: 2rem;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			&.none{
+				height: 150px !important;
+				margin-bottom: 4.2em !important;
+			}
+		}
+	}
+	.location{
+		.content{
+			.container{
+				h3.location_content-heading {
+					display: none;
+				}
+			}
+		}
+	}
+	.location_title{
+		color: white;
+		font-family: 'Poppins', sans-serif;
+		font-weight: 600;
+	}
+	#location_filters{
+		@include container();
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-top: -3em;
+		margin-bottom: 1em;
+		p{
+			font-weight: 400;
+			font-size: 1.12em;
+		}
+		.select{
+			position: relative;
+			margin-bottom: 10px;
+			&:after{
+				content: "\25BE";
+				position: absolute;
+				right: 0.7em;
+				top: 0.6em;
+				color: $aqua;
+				font-size: 1.12em;
+			}
+		}
+		select{
+			font-family: 'Poppins', sans-serif;
+			font-weight: 500;
+			width: 100%;
+			font-size: 1.08em;
+			-webkit-appearance: none;
+			padding: .7em 1.5em 0.7em 1em;
+			border: 1px solid $bordercolor;
+			border-radius: 8px;
+			&:focus{
+				border-color: $orangeborder;
+				outline: 0;
+			}
+			option{
+				font-weight: 500;
+			}
+		}
+		@media only screen and (min-width: 960px) {
+			flex-direction: row;
+			align-items: center;
+			justify-content: flex-end;
+			.select{
+				margin-left: 1em;
+				margin-bottom: 0;
+				&:first-child{
+					margin-left: 1.5em;
+				}
+			}
+			select{
+				width: 218px;
+			}
+		}
+	}
+	.locations_holder{
+		@include container();
+		margin-bottom: 2.5em;
+		.legend{
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			z-index: 2;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			display: none;
+			@media only screen and (min-width: 960px) {
+				display: flex;	
+			}
+			p{
+				img{
+					width: 28px;
+					margin-right: 5px;
+				}
+				&:first-child{
+					margin-right: 2px;
+				}
+				font-size: 1.15em;
+				background-color: white;
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				margin: 0;
+				font-weight: 400;
+				padding: 0.65em 1.6em;
+			}
+		}
+		.locations_list{
+			margin-bottom: 1em;
+			width: 100%;
+			.individual{
+				padding: 2em 0;
+				border-bottom: 1px solid $bordercolor;
+				display: none;
+				h3{
+					font-weight: 300;
+					font-size: 1.93em;
+					margin-bottom: 0.6em;
+					a{
+						color: black;
+					}
+				}
+				.info{
+					margin-bottom: 0.5em;
+					p{
+						font-size: 0.96em;
+						border-bottom: 0;
+					}
+				}
+				.btns{
+					margin-top: 2em;
+					p{
+						padding-bottom: 0;
+						border-bottom: 0;
+						a{
+							display: inline-block;
+							padding: 0.35em 0;
+							font-size: 1.12rem;
+							width: 213px;
+							text-align: center;
+							&:first-child{
+								margin-right: 5px;
+								margin-bottom: 15px;
+								@media only screen and (min-width: 960px) {
+									margin-bottom: 0	
+								}
+							}
+						}
+					}
+				}
+				a{
+					&.phone{
+						color: $aqua;
+						font-weight: 500;
+						font-size: 1.05em;
+						&:hover{
+							text-decoration: underline;
+						}
+					}
+				}
+			}
+			p.title{
+				font-weight: 400;
+				font-size: 1.2em;
+				width: 100%;
+				display: block;
+				margin: 0;
+				border-bottom: 1px solid $bordercolor;
+				padding-bottom: 1em;
+				position: relative;
+				a.back{
+					font-size: 0.8em;
+					position: absolute;
+					right: 0;
+					display: none;
+				}
+			}
+			.list>a{
+				font-weight: 300;
+				color: black;
+				display: block;
+				font-size: 1.9em;
+				border-bottom: 1px solid $bordercolor;
+				padding: 0.545em 0;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
+		}
+		#map{
+			width: 100%;
+			height: 300px;
+			border: 1px solid $bordercolor;
+			position: relative;
+		}
+		@media only screen and (min-width: 960px) {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: row;
+			.locations_list{
+				margin-bottom: 0px;
+				width: 465px;
+				margin-right: 35px;
+			}
+			#map{
+				width: calc(100% - 502px);
+				height: 788px;
+			}
+			.individual{
+				.info{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					.address, .hours{
+						width: 47.5%;
+						margin-right: 5%;
+					}
+					.hours{
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
+	.location{
+		border: 1px solid $bordercolor;
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+		margin-bottom: 2.2em;
+		position: relative;
+		.map, .initmap, #map {
+			width: 100%;
+			height: 250px;
+			top: 0;
+			right: 0;
+			background-size: cover;
+			background-position: center center;
+			background-repeat: no-repeat;
+		}
+		.container{
+			padding: 20px;
+		}
+		.content{
+			width: 100%;
+			h3{
+				margin: 0;
+				font-weight: 200;
+				font-size: 2.5em;
+				line-height: 1.1em;
+				margin-bottom: 0.4em;
+				a{
+					color: #000;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			hr{
+				border: 0;
+				height: 1px;
+				background: #b5c8c9;
+				margin-top: 2em;
+			}
+			.reviews{
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				align-items: center;
+				img{
+					width: 22px;
+					margin-right: 5px;
+				}
+				span{
+					font-size: 12px;
+					display: inline-block;
+					margin-left: 5px;
+					font-weight: 500;
+				}
+			}
+			.info{
+				flex-wrap: wrap;
+				/* .address, .hours{
+					width: 100%;
+					margin-right: 0%;
+				} */
+				.hours{
+					margin-right: 0;
+					p{
+						margin-top: 0;
+						&:first-child{
+							margin-top: 1em;
+							margin-bottom: 0;
+						}
+					}
+				}
+				p{
+					font-size: 1.1em;
+				}
+			}
+			.btns{
+				margin-top: 2.5em;
+				p{
+					margin: 0;
+					font-size: 1.1em;
+					a{
+						padding: 0.7em 0em;
+						margin-right: 1.5em;
+						width: 100%;
+						display: inline-block;
+						text-align: center;
+						margin-bottom: 1em;
+						&:last-child{
+							margin-right: 0;
+						}
+					}
+				}
+			}
+			a{
+				&.phone{
+					color: $aqua;
+					font-weight: 500;
+					font-size: 1.5em;
+					@media screen and (min-width: 960px) and (max-width: 1200px){
+						font-size: 1.3em;
+					}	
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+				&.fax{
+					color: black !important;
+					font-size: 1.2em;
+					@media screen and (min-width: 960px) and (max-width: 1200px){
+						font-size: 1.1em;
+					}	
+				}
+			}
+		}
+		.map, .initmap, #map {
+			width: 100%;
+		}
+		@media only screen and (min-width: 960px) {
+			flex-direction: row;
+			padding: 40px;
+			.content{
+				width: 50%;
+				h3{
+					font-size: 3.0em;
+				}
+				.info{
+					p{
+						font-size: 1em;
+					}
+					.tele, .place{
+						display: flex;
+						flex-flow: row nowrap;
+						justify-content: space-between;
+						padding-top: 20px;
+						@media screen and (min-width: 960px) and (max-width: 1165px){
+							font-size: 76%;
+						}						
+					}
+					.tele div,.tele p, .place .hours{
+						// padding-right: 20px;
+						width: 47.5%;
+						margin-right: 5%;
+					}
+					.tele  p{
+						align-self: flex-start;
+						padding-right: 20px;
+						margin-top: 5px !important;
+					}
+					.hours{
+						padding-left: 20px;
+					}
+					/* .address, .hours{
+						width: 47.5%;
+						margin-right: 5%;
+					}*/
+				}
+				.service_title {
+					font-size: 2.5em;
+					font-weight: 200;
+					margin-top: -.3em;
+					@media screen and (min-width: 960px) and (max-width: 1165px){
+						font-size: 2em;
+					}
+				}
+				.btns{
+					p{
+						a{
+							padding: 0.57em 0em;
+							width: 160px;
+							font-size: 13px;
+							margin-bottom: 1em;
+							&:last-child{
+								margin-bottom: 0;
+							}
+						}
+					}
+				}
+			}
+			.map, .initmap, #map {
+				height: 100%;
+				width: 50%;
+				position: absolute;
+			}
+		}
+		@media only screen and (min-width: 1200px) {
+			.content{
+				h3{
+					font-size: 3.25em;
+				}
+				a{
+					&.phone{
+						font-size: 1.5em;
+					}
+					&.fax{
+						font-size: 1.2em;
+					}
+				}
+				.info{
+					p{
+						font-size: 1.1em;
+					}
+				}
+				.btns{
+					p{
+						a{
+							width: 200px;
+							font-size: 16px;
+							margin-bottom: 0;
+						}
+					}
+				}
+				@media screen and (min-width: 1200px) and (max-width: 1267px){
+					.tele{
+						p{
+							a{
+								padding: .3em .4em;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.fl-module-location{
+		&:last-child{
+			margin-bottom: 4em;
+		}
+	}
+}

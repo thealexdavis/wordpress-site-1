@@ -1,0 +1,346 @@
+@import "variables";
+
+body#optima{
+	header, .entry-content-page, footer{
+		font-family: 'Poppins', sans-serif;
+		color: #000000;
+		h1{
+			font-weight: 200;
+			font-size: 3.0em;
+			@media only screen and (min-width: 960px) {
+				font-size: 3.9em;
+			}
+			&.pagetitle{
+				position: absolute;
+				opacity: 0;
+				left: -10000px;
+				top:-10000px;
+			}
+		}
+		h2{
+			font-weight: 400;
+			font-size: 2.5em;
+			@media only screen and (min-width: 960px) {
+				font-size: 3.0em;
+			}
+		}
+		h3{
+			font-weight: 400;
+			font-size: 1.93em;
+		}
+		h4{
+			font-weight: 400;
+			font-size: 1.465em;
+			margin-top: 0;
+			margin-bottom: 0.25em;
+		}
+		hr{
+			border: 0;
+			height: 1px;
+			background: $bordercolor;
+		}
+		ul{
+			font-size: 1.25em;
+			font-weight: 300;
+			padding: 0 0 0 24px;
+			li{
+				a{
+					color: black;
+					&:hover{
+						text-decoration: underline;
+					}
+				}
+			}
+			ul{
+				&.twocol, &.threecol, &.fourcol{
+					font-size: 1em;
+					padding: 0px;
+					list-style: disc;
+				}
+				li{
+					a{
+						color: black;
+						text-decoration: none;
+						&:hover{
+							color: $darkblue;
+							text-decoration: underline;
+						}
+					}
+				}
+				@media only screen and (min-width: 768px) {
+					&.twocol{
+						-webkit-columns: 2;
+						-moz-columns: 2;
+						columns: 2;
+						li{
+							padding-right: 3em;
+						}
+					}
+					&.threecol{
+						columns: 3;
+						-webkit-columns: 3;
+						-moz-columns: 3;
+						li{
+							padding-right: 3em;
+						}
+					}
+					&.fourcol{
+						columns: 4;
+						-webkit-columns: 4;
+						-moz-columns: 4;
+						li{
+							padding-right: 3em;
+						}
+					}
+				}
+			}
+		}
+		p{
+			font-size: 1.25em;
+			font-weight: 300;
+			a{
+				color: black;
+				&:hover{
+					text-decoration: underline;
+				}
+				&.arrow, .arrow{
+					font-weight: 500;
+					font-size: 1.25rem;
+					&:after{
+						content: "\00bb";
+						line-height: 1em;
+						font-size: 1.25rem;
+						color: $orange;
+						margin-left: 10px;
+					}
+				}
+			}
+		}
+		a{
+			cursor: pointer;
+			text-decoration: none;
+			&.arrows, .arrows{
+				&:after{
+					content: "\00bb";
+					line-height: 1em;
+					font-size: 1.25rem;
+					color: $orange;
+					margin-left: 10px;
+				}
+			}
+			span.btn{
+				border: 2px solid $aqua;
+				border-radius: 5px;
+				padding: 0.3em 0.9em;
+				color: black;
+				font-weight: 500;
+				font-size: 1em;
+				&:before{
+					color: $aqua;
+				}
+				@include transition(all, 0.15s, linear);
+				&.blue{
+					background-color: $aqua;
+					color: white;
+					&:before{
+						color: white;
+					}
+				}
+				&.orange{
+					background-color: $orange;
+					color: white;
+					border-color: $orange;
+					&:before{
+						color: white;
+					}
+				}
+				&.orangeoutline{
+					border-color: $orange;
+					&:before{
+						color: $orange;
+					}
+				}
+				&:hover{
+					background-color: $aqua;
+					color: white;
+					text-decoration: none;
+					&:before{
+						color: white !important;
+					}
+					&.blue{
+						background-color: $aquahover;
+						border-color: $aquahover;
+						&:before{
+							color: white !important;
+						}
+					}
+					&.orangeoutline{
+						background-color: $orange;
+						color: white;
+						&:before{
+							color: white !important;
+						}
+					}
+					&.orange{
+						background-color: $orangehover;
+						border-color: $orangehover;
+						&:before{
+							color: white !important;
+						}
+					}
+				}
+				& + a span.btn{
+					margin-left: 10px;
+					@media only screen and (min-width: 960px) {
+						margin-left: 20px;
+					}
+				}
+			}
+			&.btn{
+				border: 2px solid $aqua;
+				border-radius: 5px;
+				padding: 10px 0;
+				color: black;
+				font-weight: 500;
+				font-size: 1em;
+				text-align: center;
+				display: block;
+				&:before{
+					color: $aqua;
+				}
+				@include transition(all, 0.15s, linear);
+				&.blue{
+					background-color: $aqua;
+					color: white;
+					&:before{
+						color: white;
+					}
+				}
+				&.orange{
+					background-color: $orange;
+					color: white;
+					border-color: $orange;
+					&:before{
+						color: white;
+					}
+				}
+				&.orangeoutline{
+					border-color: $orange;
+					&:before{
+						color: $orange;
+					}
+				}
+				&:hover{
+					background-color: $aqua;
+					color: white;
+					text-decoration: none;
+					&:before{
+						color: white !important;
+					}
+					&.blue{
+						background-color: $aquahover;
+						border-color: $aquahover;
+						&:before{
+							color: white !important;
+						}
+					}
+					&.orangeoutline{
+						background-color: $orange;
+						color: white;
+						&:before{
+							color: white !important;
+						}
+					}
+					&.orange{
+						background-color: $orangehover;
+						border-color: $orangehover;
+						&:before{
+							color: white !important;
+						}
+					}
+				}
+				& + a.btn{
+					margin-top: 10px;	
+				}
+				@media only screen and (min-width: 960px) {
+					display: inline-block;
+					padding: 0.3em 0.9em;
+					& + a.btn{
+						margin-left: 10px;
+						margin-top: 0;
+						@media only screen and (min-width: 960px) {
+							margin-left: 20px;
+						}
+					}
+				}
+			}
+		}
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	.interior{
+		h2{
+			font-weight: 200;
+			font-size: 3.2em;
+			line-height: 1.1em;
+			margin: 0;
+		}
+		h3{
+			font-weight: 200;
+			font-size: 2.75em;
+			line-height: 1.1em;
+			margin: 0.2em 0 0;
+		}
+	}	
+	.nbm{
+		margin-bottom: 0 !important;
+	}
+	.rightsidebar{
+		hr{
+			margin: 1.0em auto 0.5em;
+		}
+	}
+	.provider{
+		.top{
+			margin: 3.2em auto 2.5em auto !important;
+		}
+		.bio{
+			h2{
+				margin: 0;
+			}
+		}
+		.facts{
+			h3{
+				font-weight: 300;
+				margin: 0;
+				font-size: 1.95em;
+				padding-top: 0.7em;
+				padding-bottom: 0.26em;
+			}
+		}
+		.title{
+			h4{
+				font-size: 2em;
+				font-weight: 300;
+			}
+		}
+		@media only screen and (min-width: 960px) {
+			.top{
+				.fl-col-group{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+				}
+				.bio{
+					width: 59% !important;
+					margin-right: 50px !important;
+				}
+				.facts{
+					width: calc(41% - 50px) !important;
+				}
+			}
+		}
+	}
+}

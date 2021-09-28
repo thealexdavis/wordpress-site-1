@@ -1,0 +1,12 @@
+// Sass configuration
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Sass Compile",
+        "type": "shell",
+        "command": "sass wp-content/themes/optimaderm/styles/scss/main.scss wp-content/themes/optimaderm/styles/css/main.css --style compressed",
+        "group": "build"
+      }
+    ]
+  }

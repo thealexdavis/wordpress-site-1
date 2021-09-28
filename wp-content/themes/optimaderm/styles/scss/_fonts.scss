@@ -1,0 +1,234 @@
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-BoldItalic.eot');
+	src: local('Poppins Bold Italic'), local('Poppins-BoldItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BoldItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BoldItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BoldItalic.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-Black.eot');
+	src: local('Poppins Black'), local('Poppins-Black'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Black.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Black.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Black.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Black.ttf') format('truetype');
+	font-weight: 900;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-Bold.eot');
+	src: local('Poppins Bold'), local('Poppins-Bold'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Bold.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Bold.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Bold.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-BlackItalic.eot');
+	src: local('Poppins Black Italic'), local('Poppins-BlackItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BlackItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BlackItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BlackItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-BlackItalic.ttf') format('truetype');
+	font-weight: 900;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBoldItalic.eot');
+	src: local('Poppins ExtraBold Italic'), local('Poppins-ExtraBoldItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBoldItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBoldItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBoldItalic.ttf') format('truetype');
+	font-weight: 800;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBold.eot');
+	src: local('Poppins ExtraBold'), local('Poppins-ExtraBold'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBold.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBold.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBold.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraBold.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLight.eot');
+	src: local('Poppins ExtraLight'), local('Poppins-ExtraLight'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLight.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLight.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLightItalic.eot');
+	src: local('Poppins ExtraLight Italic'), local('Poppins-ExtraLightItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLightItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLightItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ExtraLightItalic.ttf') format('truetype');
+	font-weight: 200;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-LightItalic.eot');
+	src: local('Poppins Light Italic'), local('Poppins-LightItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-LightItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-LightItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-LightItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-LightItalic.ttf') format('truetype');
+	font-weight: 300;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-Light.eot');
+	src: local('Poppins Light'), local('Poppins-Light'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Light.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Light.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Light.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-Italic.eot');
+	src: local('Poppins Italic'), local('Poppins-Italic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Italic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Italic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Italic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBold.eot');
+	src: local('Poppins SemiBold'), local('Poppins-SemiBold'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBold.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBold.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-Regular.eot');
+	src: local('Poppins Regular'), local('Poppins-Regular'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Regular.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Regular.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Regular.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBoldItalic.eot');
+	src: local('Poppins SemiBold Italic'), local('Poppins-SemiBoldItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBoldItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBoldItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-SemiBoldItalic.ttf') format('truetype');
+	font-weight: 600;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-MediumItalic.eot');
+	src: local('Poppins Medium Italic'), local('Poppins-MediumItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-MediumItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-MediumItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-MediumItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-MediumItalic.ttf') format('truetype');
+	font-weight: 500;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-Medium.eot');
+	src: local('Poppins Medium'), local('Poppins-Medium'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Medium.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Medium.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Medium.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Medium.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-ThinItalic.eot');
+	src: local('Poppins Thin Italic'), local('Poppins-ThinItalic'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ThinItalic.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ThinItalic.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ThinItalic.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-ThinItalic.ttf') format('truetype');
+	font-weight: 100;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Poppins';
+	src: url('/wp-content/themes/optimaderm/fonts/Poppins-Thin.eot');
+	src: local('Poppins Thin'), local('Poppins-Thin'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Thin.eot?#iefix') format('embedded-opentype'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Thin.woff2') format('woff2'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Thin.woff') format('woff'),
+		url('/wp-content/themes/optimaderm/fonts/Poppins-Thin.ttf') format('truetype');
+	font-weight: 100;
+	font-style: normal;
+	font-display: swap;
+}
+

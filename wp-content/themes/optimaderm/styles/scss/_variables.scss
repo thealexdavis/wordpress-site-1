@@ -1,0 +1,29 @@
+@mixin transition($place, $time, $ease) {
+	-moz-transition: $place $time $ease;
+	-webkit-transition: $place $time $ease;
+	-o-transition-property: $place $time $ease;
+	-ms-transition-property: $place $time $ease;
+	transition-property: $place $time $ease;
+	transition: $place $time $ease;
+}
+
+@mixin container(){
+	// 	width: calc(100% - 60px);
+	width: calc(100% - 50px);
+	max-width: 1920px;
+	margin: 0 auto;
+	position: relative;
+	@media only screen and (min-width: 960px) {
+		// width: calc(100% - 100px);
+	}
+}
+
+$aqua: #369cc6;
+$aquahover: darken($aqua, 10%);
+$orange: #af5404;
+$orangehover: darken($orange, 10%);
+$bordercolor: #bfcfd0;
+$darkblue: #24396e;
+$darkbluehover: darken($darkblue, 10%);
+$lightblue: #3798c1;
+$orangeborder: #d1c1b6;

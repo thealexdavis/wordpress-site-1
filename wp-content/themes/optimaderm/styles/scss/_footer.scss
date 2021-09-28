@@ -1,0 +1,212 @@
+@import "variables";
+
+body#optima{
+	footer#footer{
+		background-color: white;
+		width: calc(100% - 60px);
+		max-width: 1920px;
+		margin: 0 auto 0;
+		position: relative;
+		&:before{
+			content: "";
+			width: 400%;
+			left: -200px;
+			height: 1px;
+			position: absolute;
+			top: 0;
+			background-color: $bordercolor;
+		}
+		.container{
+			@include container();
+			width: 100%;
+			max-width: 100%;
+			display: flex;
+			flex-direction: column;
+			flex-wrap: wrap;
+			padding: 4em 0;
+			.col-sm-15{
+				&.first{
+					display: flex;
+					flex-direction: row;
+					flex-wrap: wrap;
+					margin-bottom: 1em;
+					.col-sm-15{
+						width: 47.5%;
+						margin-right: 5%;
+						&:nth-child(even){
+							margin-right: 0;
+						}
+					}
+					ul{
+						list-style: none;
+						margin: 0;
+						padding: 0;
+						li{
+							a{
+								color: black;
+								font-weight: 300;
+								&:hover{
+									text-decoration: underline;
+								}
+							}
+							&:last-child{
+								margin-bottom: 0;
+							}
+						}
+						&.firstlist{
+							li{
+								margin-bottom: 1.3em;
+								a{
+									font-size: 1.15em;
+								}
+							}
+						}
+						&.next{
+							li{
+								margin-bottom: 0.41em;
+								a{
+									font-size: 0.87em;
+								}
+							}
+						}
+					}
+				}
+				&.last{
+					.top{
+						display: flex;
+						flex-direction: column;
+						flex-wrap: wrap;
+						margin-bottom: 1.5em;
+						a.logo{
+							img{
+								width: 273px;
+							}
+						}
+						a.phone{
+							color: $aqua;
+							font-weight: 500;
+							margin-left: 0em;
+							font-size: 1.1em;
+							margin-top: 1.8em;
+							&:hover{
+								text-decoration: underline;
+							}
+							@media only screen and (max-width: 959px) {
+								font-size: 18px !important;	
+							}
+						}
+					}
+					.bottom{
+						.copyright{
+							border-top: 1px solid #bfcfd0;
+							margin-top: 1.25em;
+							padding-top: 1.25em;
+							p{
+								font-size: 0.8em;
+								line-height: 1em;
+								margin: 0;
+							}
+						}
+						.btns{
+							display: flex;
+							flex-direction: column;
+							flex-wrap: wrap;
+							a{
+								&.btn{
+									padding: .35em .9em !important;
+									@media only screen and (max-width: 959px) {
+										padding: 10px 0 !important;
+										text-align: center !important;
+										font-size: 16px !important;
+										display: block;
+									}
+								}
+								&.location{
+									&:before{
+										font-family: "Font Awesome 5 Pro";
+										font-size: 17px;
+										margin-right: 10px;
+										color: white;
+										font-weight: 900;
+										padding-left: 0;
+										content: "\f3c5";
+										@include transition(all, 0.15s, linear);
+									}
+								}
+								&.call{
+									margin-right: 2.0em;
+									padding: 0.35em 1em !important;
+									@media only screen and (max-width: 959px) {
+										padding: 10px 0 !important;
+										margin-right: 0 !important;
+										text-align: center !important;
+										font-size: 16px !important;
+										margin: 10px 0 !important;
+										display: block;
+									}
+								}
+							}
+							ul{
+								list-style: none;
+								margin: 0;
+								padding: 0;
+								li{
+									display: inline-block;
+									margin-right: 0.8em;
+									&:last-child{
+										margin-right: 0;
+									}
+									a{
+										color: black;
+										font-size: 1.3em;
+										@media only screen and (max-width: 959px) {
+											font-size: 28px !important;	
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		@media only screen and (min-width: 960px) {
+			width: calc(100% - 100px);
+			.container{
+				flex-direction: row;	
+				width: 100%;
+				max-width: 100%;
+				.col-sm-15{
+					&.first{
+						margin-bottom: 0;
+					}
+					&.last{
+						.top{
+							margin-bottom: 7.3em;
+						}
+						.bottom{
+							.btns{
+								a{
+									&.location{
+										margin-right: 1em;
+									}
+								}
+								flex-direction: row;
+								align-items: center;
+								.textwidget{
+									display: flex;
+									flex-direction: row;
+									flex-wrap: wrap;
+									align-items: center;
+									a{
+										margin-bottom: 0;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,67 @@
+@import "variables";
+
+body#optima .entry-content-page{
+	.fl-module-accordion{
+		margin-bottom: 5em;
+		h3{
+			margin: 0 0 0.1em;
+			font-size: 3.22em;
+		}
+	}
+	.fl-accordion-item{
+		padding: 1.93em 0;
+		border-top: 1px solid $bordercolor;
+		&:last-child{
+			border-bottom: 1px solid $bordercolor;
+		}
+		.fl-accordion-button{
+			padding: 0;
+		}
+		.fl-accordion-content{
+			padding: 1em 0 0;
+			ul{
+				padding: 0 0 0 24px;
+				font-size: 1.2em;
+			}
+			@media only screen and (min-width: 960px) {
+				&.list-2{
+					ul{
+						-webkit-columns: 2;
+						-moz-columns: 2;
+						columns: 2;
+						li{
+							padding-right: 3em;
+						}
+					}
+				}
+				&.list-3{
+					ul{
+						columns: 3;
+						-webkit-columns: 3;
+						-moz-columns: 3;
+						li{
+							padding-right: 3em;
+						}
+					}
+				}
+			}
+		}
+		.fl-accordion-button-label{
+			color: black;
+			font-weight: 400;
+			font-size: 1.935em;
+			&:focus{
+				outline: 0;
+			}
+		}
+		.fl-accordion-button-icon{
+			color: $orange;
+			.fl-accordion-button-icon{
+				opacity: 1;
+			}
+			&:focus{
+				outline: 0;
+			}
+		}
+	}	
+}
